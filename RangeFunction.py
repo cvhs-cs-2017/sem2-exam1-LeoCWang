@@ -12,5 +12,12 @@ def forty_one5():
         print (i)
 print(forty_one5())
 
-"""Write a program that will count print all the multiples of (n) where n is
+"""Write a program that will count print first 10 multiples of (n) where n is
 taken from user input.  Include necessary print statements."""
+def mult10(n):
+    x = 1
+    for i in range(10):
+        y = n * x
+        x = x + 1
+        print (y)
+print(mult10(int(input('enter a number:'))))
