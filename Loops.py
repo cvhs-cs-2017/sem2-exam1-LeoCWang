@@ -2,7 +2,15 @@
 than 100.  It should then spit out the result AND tell the user how many times
 it had to add 5 (if any)"""
 
-
+def add5(n):
+    x = 0
+    while n <= 100:
+        n = n + 5
+        x = x + 1
+    else:
+        print (n)
+        print('I added five ',x,' times till it was over 100')
+print (add5(int(input('Enter a number:'))))
 
 
 
