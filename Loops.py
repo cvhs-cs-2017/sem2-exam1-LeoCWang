@@ -12,9 +12,16 @@ def add5(n):
         print('I added five ',x,' times till it was over 100')
 print (add5(int(input('Enter a number:'))))
 
-
-
-
 """Write a program that will prompt the user for an input value (n) and double
 it IF is an ODD number, triple it if is an EVEN number and do nothing if it is
 anything else (like a decimal or a string)"""
+
+def triple(n):
+    if n % 2 == 0:
+        n = n * 3
+    elif n % 2 is not 0:
+        n = n * 2
+    else:
+        print(n,'is not a whole number!')
+    return (n)
+print (triple(int(input('Enter a whole number:'))))
