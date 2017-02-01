@@ -20,4 +20,4 @@ def mult10(n):
         y = n * x
         x = x + 1
         print (y)
-print(mult10(int(input('enter a number:'))))
+print(mult10(float(input('enter a number:'))))

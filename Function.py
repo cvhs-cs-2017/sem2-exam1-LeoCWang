@@ -13,4 +13,4 @@ the necessary print statements and address any issues with whitespace. """
 def usertriple(n):
     n = 3 *n
     return n
-print (usertriple(int(input('Please enter a number'))))
+print (usertriple(float(input('Please enter a number'))))
