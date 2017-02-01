@@ -18,3 +18,10 @@ def encrypt(plainText):
 print (encrypt(plainText))
 
 """Write an encryption code that you make up and run it for the variable NoVowels"""
+x = encrypt(plainText)
+def Encrypt(NoVowels):
+    cipherText = ""
+    for ch in NoVowels:
+        cipherText = cipherText + str(ord(ch))
+    return cipherText
+print(Encrypt(x))
