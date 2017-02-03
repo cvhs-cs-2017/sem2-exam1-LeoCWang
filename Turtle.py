@@ -3,35 +3,37 @@
 import turtle
 Tim = turtle.Turtle()
 def cube(lhw):
-    for i in range(2):
+    for i in range(4):
         Tim.forward(lhw)
         Tim.left(90)
-        Tim.fd(lhw)
-        Tim.left(90)
-    for i in range(2):
-        Tim.left(30)
-        Tim.fd(lhw)
-        Tim.left(30)
-    Tim.left(90)
+    Tim.left(45)
+    Tim.fd(lhw/2)
+    Tim.left(45)
     Tim.fd(lhw)
-    Tim.home()
+    Tim.left(135)
+    Tim.fd(lhw/2)
+    Tim.left(180)
+    Tim.fd(lhw/2)
+    Tim.right(45)
     Tim.fd(lhw)
-    for i in range(2):
-        Tim.left(30)
-        Tim.fd(lhw)
-        Tim.left(30)
-    Tim.left(90)
+    Tim.right(135)
+    Tim.fd(lhw/2)
+    Tim.left(45)
+    Tim.fd(lhw)
+    Tim.left(135)
+    Tim.fd(lhw/2)
+    Tim.left(45)
     Tim.fd(lhw)
     Tim.left(180)
     Tim.fd(lhw)
-    Tim.left(150)
-    Tim.fd(lhw)
-    Tim.left(90)
-    Tim.fd(lhw)
-    Tim.left(90)
+    Tim.right(90)
     Tim.fd(lhw)
     input()
+    Tim.clear()
 cube(50)
 
 """Import and Call the DrawRectangle(Anyturtle, l, w) function from the
 file MyFile.py"""
+
+from MyFile import DrawRectangle
+DrawRectangle(Tim, 50, 25)
